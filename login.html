@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Student Login</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+    background:#f4f4f4;
+}
+.login-box{
+    width:400px;
+    background:white;
+    margin:60px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+.login-box h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+}
+label{
+    font-weight:bold;
+}
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+.show{
+    width:auto;
+}
+button{
+    width:100%;
+    padding:12px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    cursor:pointer;
+}
+button:hover{
+    background:#0055aa;
+}
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+.options input{
+    width:auto;
+}
+a{
+    text-decoration:none;
+    color:#003366;
+}
+a:hover{
+    color:red;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<h2>Smart College Portal</h2>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="attendance.html">Attendance</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<div class="login-box">
+<h2>Student Login</h2>
+<form onsubmit="return loginValidation()">
+<label>Username</label>
+<input type="text" id="username" placeholder="Enter Username">
+<label>Password</label>
+<input type="password" id="password" placeholder="Enter Password">
+<input type="checkbox" class="show" onclick="showPassword()">
+Show Password
+<br><br>
+<div class="options">
+<label>
+<input type="checkbox"> Remember Me
+</label>
+<a href="#">Forgot Password?</a>
+</div>
+<button type="submit">Login</button>
+</form>
+</div>
+    <footer>
+        <p>© 2026 Smart College Management Portal</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

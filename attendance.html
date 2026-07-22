@@ -1,0 +1,91 @@
+<html>
+<head>
+      <title>Attendance | Smart College Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h2>Smart College Portal</h2>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- Attendance Section -->
+    <section class="dashboard">
+        <h1>Attendance Management</h1>
+        <p>Calculate Student Attendance Percentage</p>
+        <br>
+        <input type="number" id="present" placeholder="Enter Present Days">
+        <br><br>
+        <input type="number" id="total" placeholder="Enter Total Working Days">
+        <br><br>
+        <button onclick="calculateAttendance()">
+            Calculate Attendance
+        </button>
+        <br><br>
+        <h2 id="result"></h2>
+        <br>
+        <table>
+            <tr>
+                <th>Roll No</th>
+                <th>Student Name</th>
+                <th>Attendance</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Anu</td>
+                <td>92%</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Riya</td>
+                <td>88%</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Rahul</td>
+                <td>75%</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Neha</td>
+                <td>65%</td>
+                <td>Short Attendance</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Smart College Management Portal | All Rights Reserved
+        </p>
+    </footer>
+    <script>
+        function calculateAttendance() {
+            let present = Number(document.getElementById("present").value);
+            let total = Number(document.getElementById("total").value);
+            if (present == "" || total == "" || total == 0) {
+                alert("Please Enter Valid Values");
+                return;
+            }
+            let percentage = (present / total) * 100;
+            document.getElementById("result").innerHTML =
+                "Attendance Percentage : " + percentage.toFixed(2) + "%";
+        }
+</script>
+	    <script src="script.js"></script>
+</body>
+</html>

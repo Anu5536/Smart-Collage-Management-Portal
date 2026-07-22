@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Student Registration</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+background:#f4f4f4;
+}
+.form-box{
+width:450px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+.form-box h2{
+text-align:center;
+color:#003366;
+margin-bottom:20px;
+}
+label{
+font-weight:bold;
+}
+input,select,textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+border:1px solid gray;
+border-radius:5px;
+}
+.gender{
+width:auto;
+margin-right:5px;
+}
+.skills{
+width:auto;
+margin-right:5px;
+}
+button{
+width:100%;
+padding:12px;
+background:#003366;
+color:white;
+border:none;
+border-radius:5px;
+font-size:18px;
+cursor:pointer;
+}
+button:hover{
+background:#0055aa;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<h2>Smart College Portal</h2>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="attendance.html">Attendance</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<div class="form-box">
+<h2>Student Registration Form</h2>
+<form onsubmit="return validateForm()">
+<label>Full Name</label>
+<input type="text" id="name">
+<label>Email</label>
+<input type="email" id="email">
+<label>Password</label>
+<input type="password" id="password">
+<label>Mobile Number</label>
+<input type="tel" id="mobile">
+<label>Date of Birth</label>
+<input type="date" id="dob">
+<label>Course</label>
+<select id="course">
+<option>Select Course</option>
+<option>BCA</option>
+<option>BBA</option>
+<option>B.Com</option>
+<option>MCA</option>
+</select>
+<label>Gender</label>
+<br><br>
+<input type="radio" class="gender" name="gender"> Male
+<input type="radio" class="gender" name="gender"> Female
+<br><br>
+<label>Skills</label>
+<br><br>
+<input type="checkbox" class="skills"> HTML
+<input type="checkbox" class="skills"> CSS
+<input type="checkbox" class="skills"> JavaScript
+<input type="checkbox" class="skills"> Python
+<br><br>
+<label>Address</label>
+<textarea id="address" rows="4"></textarea>
+<button type="submit">
+Register
+</button>
+</form>
+</div>
+    <footer>
+        <p>© 2026 Smart College Management Portal</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

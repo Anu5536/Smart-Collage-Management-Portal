@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+    background:#f4f4f4;
+}
+.container{
+    width:90%;
+    margin:auto;
+    padding:30px;
+}
+.contact-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.form-box{
+    flex:1;
+    min-width:350px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+.form-box h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid gray;
+    border-radius:5px;
+}
+button{
+    width:100%;
+    background:#003366;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+button:hover{
+    background:#0055aa;
+}
+.info-box{
+    flex:1;
+    min-width:300px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+.info-box h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+.info-box p{
+    margin:15px 0;
+    font-size:17px;
+}
+footer{
+    margin-top:40px;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.social a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+.social a:hover{
+    color:yellow;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<h2>Smart College Portal</h2>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="attendance.html">Attendance</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<div class="container">
+<div class="contact-box">
+<div class="form-box">
+<h2>Contact Us</h2>
+<form onsubmit="return submitForm()">
+<input type="text" id="name" placeholder="Enter Your Name">
+<input type="email" id="email" placeholder="Enter Your Email">
+<textarea id="message" rows="6" placeholder="Enter Your Message"></textarea>
+<button type="submit">
+Send Message
+</button>
+</form>
+</div>
+<div class="info-box">
+<h2>College Contact Information</h2>
+<p><b>College :</b> Smart College</p>
+<p><b>Address :</b> Kurukshetra, Haryana</p>
+<p><b>Email :</b> info@smartcollege.com</p>
+<p><b>Phone :</b> +91 9876543210</p>
+<p><b>Working Hours :</b> Monday - Saturday (9 AM - 5 PM)</p>
+</div>
+</div>
+</div>
+<footer>
+<h3>Smart College Management Portal</h3>
+<p>Designed using HTML, CSS & JavaScript</p>
+<div class="social">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+<a href="#">YouTube</a>
+</div>
+<p>© 2026 All Rights Reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
